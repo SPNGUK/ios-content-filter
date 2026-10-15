@@ -15,7 +15,7 @@ public static class AppGroupRuleStore
         await packaged.CopyToAsync(buffer);
         var bytes = buffer.ToArray();
 
-        var container = Foundation.NSFileManager.Default.GetContainerUrl(FilterIdentity.AppGroupId);
+        var container = Foundation.NSFileManager.DefaultManager.GetContainerUrl(FilterIdentity.AppGroupId);
         if (container is null)
         {
             return "App Group container is unavailable. The host must be signed with the App Groups entitlement before this write succeeds.";
