@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		F1E000000000000000000063 /* FilterExtensions */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F1E000000000000000000074 /* Build configuration list for PBXAggregateTarget "FilterExtensions" */;
+			buildPhases = (
+			);
+			dependencies = (
+				F1E000000000000000000091 /* PBXTargetDependency */,
+				F1E000000000000000000093 /* PBXTargetDependency */,
+			);
+			name = FilterExtensions;
+			productName = FilterExtensions;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		F1E000000000000000000021 /* FilterDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E000000000000000000011 /* FilterDataProvider.swift */; };
+		F1E000000000000000000022 /* FilterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E000000000000000000013 /* FilterConstants.swift */; };
+		F1E000000000000000000023 /* RuleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E000000000000000000014 /* RuleStore.swift */; };
+		F1E000000000000000000024 /* FlowEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E000000000000000000015 /* FlowEvaluator.swift */; };
+		F1E000000000000000000025 /* SharedKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E000000000000000000016 /* SharedKeychain.swift */; };
+		F1E000000000000000000026 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E000000000000000000019 /* NetworkExtension.framework */; };
+		F1E000000000000000000031 /* FilterControlProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E000000000000000000012 /* FilterControlProvider.swift */; };
+		F1E000000000000000000032 /* FilterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E000000000000000000013 /* FilterConstants.swift */; };
+		F1E000000000000000000033 /* RuleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E000000000000000000014 /* RuleStore.swift */; };
+		F1E000000000000000000034 /* FlowEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E000000000000000000015 /* FlowEvaluator.swift */; };
+		F1E000000000000000000035 /* SharedKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E000000000000000000016 /* SharedKeychain.swift */; };
+		F1E000000000000000000036 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E000000000000000000019 /* NetworkExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1E000000000000000000092 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1E000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1E000000000000000000061;
+			remoteInfo = FilterData;
+		};
+		F1E000000000000000000094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1E000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1E000000000000000000062;
+			remoteInfo = FilterControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F1E000000000000000000011 /* FilterDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDataProvider.swift; sourceTree = "<group>"; };
+		F1E000000000000000000012 /* FilterControlProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterControlProvider.swift; sourceTree = "<group>"; };
+		F1E000000000000000000013 /* FilterConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterConstants.swift; sourceTree = "<group>"; };
+		F1E000000000000000000014 /* RuleStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleStore.swift; sourceTree = "<group>"; };
+		F1E000000000000000000015 /* FlowEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowEvaluator.swift; sourceTree = "<group>"; };
+		F1E000000000000000000016 /* SharedKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedKeychain.swift; sourceTree = "<group>"; };
+		F1E000000000000000000017 /* FilterData.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FilterData.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1E000000000000000000018 /* FilterControl.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FilterControl.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1E000000000000000000019 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		F1E00000000000000000001A /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1E000000000000000000042 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E000000000000000000026 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E000000000000000000052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E000000000000000000036 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1E000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				F1E000000000000000000007 /* Config */,
+				F1E000000000000000000004 /* FilterData */,
+				F1E000000000000000000005 /* FilterControl */,
+				F1E000000000000000000006 /* Shared */,
+				F1E000000000000000000008 /* Frameworks */,
+				F1E000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1E000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1E000000000000000000017 /* FilterData.appex */,
+				F1E000000000000000000018 /* FilterControl.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1E000000000000000000004 /* FilterData */ = {
+			isa = PBXGroup;
+			children = (
+				F1E000000000000000000011 /* FilterDataProvider.swift */,
+			);
+			path = FilterData;
+			sourceTree = "<group>";
+		};
+		F1E000000000000000000005 /* FilterControl */ = {
+			isa = PBXGroup;
+			children = (
+				F1E000000000000000000012 /* FilterControlProvider.swift */,
+			);
+			path = FilterControl;
+			sourceTree = "<group>";
+		};
+		F1E000000000000000000006 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F1E000000000000000000013 /* FilterConstants.swift */,
+				F1E000000000000000000015 /* FlowEvaluator.swift */,
+				F1E000000000000000000014 /* RuleStore.swift */,
+				F1E000000000000000000016 /* SharedKeychain.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F1E000000000000000000007 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F1E00000000000000000001A /* Common.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F1E000000000000000000008 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1E000000000000000000019 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1E000000000000000000061 /* FilterData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1E000000000000000000072 /* Build configuration list for PBXNativeTarget "FilterData" */;
+			buildPhases = (
+				F1E000000000000000000041 /* Sources */,
+				F1E000000000000000000042 /* Frameworks */,
+				F1E000000000000000000043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FilterData;
+			productName = FilterData;
+			productReference = F1E000000000000000000017 /* FilterData.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F1E000000000000000000062 /* FilterControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1E000000000000000000073 /* Build configuration list for PBXNativeTarget "FilterControl" */;
+			buildPhases = (
+				F1E000000000000000000051 /* Sources */,
+				F1E000000000000000000052 /* Frameworks */,
+				F1E000000000000000000053 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FilterControl;
+			productName = FilterControl;
+			productReference = F1E000000000000000000018 /* FilterControl.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1E000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				ORGANIZATIONNAME = SPNG;
+				TargetAttributes = {
+					F1E000000000000000000061 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					F1E000000000000000000062 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+				};
+			};
+			buildConfigurationList = F1E000000000000000000071 /* Build configuration list for PBXProject "FilterExtensions" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1E000000000000000000002;
+			productRefGroup = F1E000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1E000000000000000000061 /* FilterData */,
+				F1E000000000000000000062 /* FilterControl */,
+				F1E000000000000000000063 /* FilterExtensions */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1E000000000000000000043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E000000000000000000053 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1E000000000000000000041 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E000000000000000000021 /* FilterDataProvider.swift in Sources */,
+				F1E000000000000000000022 /* FilterConstants.swift in Sources */,
+				F1E000000000000000000023 /* RuleStore.swift in Sources */,
+				F1E000000000000000000024 /* FlowEvaluator.swift in Sources */,
+				F1E000000000000000000025 /* SharedKeychain.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E000000000000000000051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E000000000000000000031 /* FilterControlProvider.swift in Sources */,
+				F1E000000000000000000032 /* FilterConstants.swift in Sources */,
+				F1E000000000000000000033 /* RuleStore.swift in Sources */,
+				F1E000000000000000000034 /* FlowEvaluator.swift in Sources */,
+				F1E000000000000000000035 /* SharedKeychain.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1E000000000000000000091 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1E000000000000000000061 /* FilterData */;
+			targetProxy = F1E000000000000000000092 /* PBXContainerItemProxy */;
+		};
+		F1E000000000000000000093 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1E000000000000000000062 /* FilterControl */;
+			targetProxy = F1E000000000000000000094 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F1E000000000000000000081 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1E00000000000000000001A /* Common.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1E000000000000000000082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1E00000000000000000001A /* Common.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		F1E000000000000000000083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1E00000000000000000001A /* Common.xcconfig */;
+			buildSettings = {
+				FILTER_ENTITLEMENTS_FILE = FilterData/FilterData.entitlements;
+				INFOPLIST_FILE = FilterData/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.spng.ioscontentfilter.FilterData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F1E000000000000000000084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1E00000000000000000001A /* Common.xcconfig */;
+			buildSettings = {
+				FILTER_ENTITLEMENTS_FILE = FilterData/FilterData.entitlements;
+				INFOPLIST_FILE = FilterData/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.spng.ioscontentfilter.FilterData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F1E000000000000000000085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1E00000000000000000001A /* Common.xcconfig */;
+			buildSettings = {
+				FILTER_ENTITLEMENTS_FILE = FilterControl/FilterControl.entitlements;
+				INFOPLIST_FILE = FilterControl/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.spng.ioscontentfilter.FilterControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F1E000000000000000000086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1E00000000000000000001A /* Common.xcconfig */;
+			buildSettings = {
+				FILTER_ENTITLEMENTS_FILE = FilterControl/FilterControl.entitlements;
+				INFOPLIST_FILE = FilterControl/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.spng.ioscontentfilter.FilterControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F1E000000000000000000087 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F1E000000000000000000088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1E000000000000000000071 /* Build configuration list for PBXProject "FilterExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E000000000000000000081 /* Debug */,
+				F1E000000000000000000082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1E000000000000000000072 /* Build configuration list for PBXNativeTarget "FilterData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E000000000000000000083 /* Debug */,
+				F1E000000000000000000084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1E000000000000000000073 /* Build configuration list for PBXNativeTarget "FilterControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E000000000000000000085 /* Debug */,
+				F1E000000000000000000086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1E000000000000000000074 /* Build configuration list for PBXAggregateTarget "FilterExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E000000000000000000087 /* Debug */,
+				F1E000000000000000000088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1E000000000000000000001 /* Project object */;
+}

@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.plist text eol=lf
+*.entitlements text eol=lf
+*.pbxproj text eol=lf
+*.xcscheme text eol=lf
+*.csproj text eol=lf
+*.props text eol=lf
+*.yml text eol=lf
+*.sh text eol=lf
