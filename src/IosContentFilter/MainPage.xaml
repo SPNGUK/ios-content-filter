@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IosContentFilter.MainPage"
+             Title="Content Filter">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="16">
+            <Label
+                Text="Content filter"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Milestone 1 wires the host, the two Network Extension stubs, and the App Group. Filtering is not enabled on the device from this screen."
+                Style="{StaticResource Body}" />
+
+            <Label
+                Text="A distribution-signed NEFilter content filter runs on a supervised iPad, or on a child device after Screen Time child authorisation. Family Controls individual authorisation (the owner's own device) does not enable it. Development-signed installs may still save a configuration for debugging. See the README."
+                Style="{StaticResource Body}" />
+
+            <Button
+                Text="Write sample rules"
+                Clicked="OnWriteRulesClicked"
+                SemanticProperties.Hint="Copies rules.json into the App Group container" />
+
+            <Button
+                Text="Prepare filter configuration"
+                Clicked="OnPrepareConfigurationClicked"
+                SemanticProperties.Hint="Builds an in-memory NEFilterProviderConfiguration" />
+
+            <Button
+                Text="Screen Time authorisation"
+                Clicked="OnScreenTimeClicked"
+                SemanticProperties.Hint="Explains the Screen Time stub for this milestone" />
+
+            <Label
+                x:Name="StatusLabel"
+                Text="Ready."
+                Style="{StaticResource Status}" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

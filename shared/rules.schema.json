@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://uk.spng.ioscontentfilter/rules.schema.json",
+  "title": "Content filter rules",
+  "description": "JSON document the MAUI host writes into the App Group container. FilterData and FilterControl read it. Milestone 1 does not enforce defaultDecision.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "defaultDecision"],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "defaultDecision": {
+      "enum": ["allow", "drop"]
+    }
+  }
+}

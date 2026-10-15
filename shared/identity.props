@@ -1,0 +1,20 @@
+<Project>
+  <!--
+    Canonical bundle identifiers for this repo.
+    Change the values here, then update every file listed in README.md
+    ("Changing bundle identifiers") and run scripts/check-identity.py.
+  -->
+  <PropertyGroup>
+    <FilterHostBundleId>uk.spng.ioscontentfilter</FilterHostBundleId>
+    <FilterDataBundleId>uk.spng.ioscontentfilter.FilterData</FilterDataBundleId>
+    <FilterControlBundleId>uk.spng.ioscontentfilter.FilterControl</FilterControlBundleId>
+    <FilterAppGroupId>group.uk.spng.ioscontentfilter</FilterAppGroupId>
+    <!--
+      Keychain access group suffix. The signed entitlement is
+      $(AppIdentifierPrefix) plus this suffix, which expands to
+      TEAMID.group.uk.spng.ioscontentfilter.
+    -->
+    <FilterKeychainAccessGroupSuffix>group.uk.spng.ioscontentfilter</FilterKeychainAccessGroupSuffix>
+    <FilterTeamIdPlaceholder>YOUR_TEAM_ID</FilterTeamIdPlaceholder>
+  </PropertyGroup>
+</Project>
