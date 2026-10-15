@@ -94,7 +94,9 @@ Local and CI both need a Mac with Xcode and the .NET 10 SDK. `global.json` selec
 
 ```bash
 python3 scripts/check-identity.py
-dotnet workload install maui-ios
+# Pin matches GitHub macos-latest (Xcode 26.6) as of October 2026.
+# A newer unpinned maui-ios workload requires Xcode 27.
+dotnet workload install maui-ios --version 10.0.401
 bash scripts/build-extensions.sh
 dotnet build src/IosContentFilter/IosContentFilter.csproj \
   -c Release \
@@ -119,7 +121,7 @@ This compile does not produce an installable, signed `.ipa`.
 
 ## Continuous integration
 
-`.github/workflows/ios-compile.yml` runs on `macos-latest`. It checks the identifiers, installs the `maui-ios` workload, builds the Swift extensions, then builds the MAUI app for `ios-arm64` with code signing off. The job fails if either compile fails. It uses no Apple secrets.
+`.github/workflows/ios-compile.yml` runs on `macos-latest`. It checks the identifiers, installs `maui-ios` workload set `10.0.401` (the set that matches that image’s Xcode 26.6), builds the Swift extensions, then builds the MAUI app for `ios-arm64` with code signing off. The job fails if either compile fails. It uses no Apple secrets. When GitHub’s default Xcode moves to 27, bump the workload set in the workflow to the matching release.
 
 ## What Siu provides before a signed install
 
