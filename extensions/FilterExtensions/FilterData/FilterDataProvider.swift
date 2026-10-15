@@ -8,13 +8,11 @@ public final class FilterDataProvider: NEFilterDataProvider {
 
     override public func startFilter(completionHandler: @escaping (Error?) -> Void) {
         log.info("startFilter")
-        // No NEFilterRule values yet, so .filterData delivers every new flow to handleNewFlow.
-        // A later milestone should narrow this with explicit rules. The data provider
-        // process has a small jetsam budget; keep the decision path tiny.
-        let settings = NEFilterSettings(rules: [], defaultAction: .filterData)
-        apply(settings) { error in
-            completionHandler(error)
-        }
+        // NEFilterSettings and apply(_:) are macOS-only. On iOS the system delivers
+        // flows to handleNewFlow from the provider configuration the host saves
+        // (filterBrowsers / filterSockets). Keep this path small: the data provider
+        // process has a tight jetsam budget.
+        completionHandler(nil)
     }
 
     override public func stopFilter(

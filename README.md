@@ -64,7 +64,7 @@ scripts/check-identity.py             Fails if the IDs drift
 .github/workflows/ios-compile.yml     macos-latest compile, no signing secrets
 ```
 
-`FlowEvaluator.decide(_:)` in `extensions/FilterExtensions/Shared/FlowEvaluator.swift` is the hook. It logs a host-only description and returns `.allow`. Returning `.drop` blocks the flow. `FilterDataProvider.startFilter` installs an empty rule list with default action `.filterData`, so every new flow reaches that hook. Narrow the rules before this sees real traffic.
+`FlowEvaluator.decide(_:)` in `extensions/FilterExtensions/Shared/FlowEvaluator.swift` is the hook. It logs a host-only description and returns `.allow`. Returning `.drop` blocks the flow. On iOS, `NEFilterSettings` and `apply(_:)` are macOS-only (Xcode 26 SDK marks them `API_UNAVAILABLE` on iOS), so `startFilter` only reports that the provider is ready. The system sends flows to `handleNewFlow` from the configuration the host saves later (`filterBrowsers` and `filterSockets`).
 
 The host writes `rules.json` into the App Group. Both extensions read it through `RuleStore`. The host does not call `NEFilterManager.SaveToPreferences` in this milestone. `FilterConfigurationDraft` only builds the configuration object so the .NET binding is part of the compile.
 
